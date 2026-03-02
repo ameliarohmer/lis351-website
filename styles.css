@@ -11,7 +11,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1.5;
   color: #222;
-  background: lightblue;
+  background: #df6850;
 }
 
 a { color: inherit; text-decoration: none; }
@@ -25,22 +25,24 @@ a:hover { text-decoration: underline; }
 /* ===== Header ===== */
 .site-header {
   border-bottom: 1px solid #eee;
-  background: #fff;
+  background: #darkred;
 }
 
 .header-inner {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 10px 0;
 }
 
 .brand {
   font-size: 28px;
   font-weight: 700;
+  color: white;
 }
 
 .brand .dot {
-  color: #4DA3FF
+  color: white;
 }
 
 .site-nav a {
@@ -48,48 +50,38 @@ a:hover { text-decoration: underline; }
   text-transform: uppercase;
   font-size: 12px;
   letter-spacing: 0.08em;
-  color: #444;
+  color: white;
 }
 
 
 /* ===== Hero ===== */
 .hero {
-  min-height: 360px;
+  min-height: 420px;
   background-image: 
     linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)),
-    url("https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=1600&q=60");
+    url("images/MadisonTitlePic.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .hero-content {
-  /* TODO D (Center content):
-     Center the hero text horizontally.
-     Add vertical padding so it doesn't feel cramped.
-  */
+  text-align: center;
+  padding: 60px 0;
 }
 
 .hero h1 {
   margin: 0;
-  /* TODO E (Typography):
-     Make the headline large and uppercase.
-     (e.g., font-size around 42–48px, text-transform uppercase)
-  */
+  font-size: 48px;
+  text-transform: uppercase;
+  color: darkred;
 }
 
 .hero-subhead {
   margin: 6px 0 22px;
-  /* TODO F (Typography):
-     Make this slightly smaller than h1 and a softer color.
-     (e.g., font-size ~20–24px; color #555)
-  */
+  font-size: 22px;
+  color: darkred;
 }
-
-
-
-
-
 
 /* ===== Buttons ===== */
 .btn {
@@ -100,37 +92,30 @@ a:hover { text-decoration: underline; }
 }
 
 .btn-dark {
-  /* TODO G (Button styling):
-     Make this a dark filled button with white text.
-     (e.g., background #333; color #fff)
-  */
+  background-color: darkred;
+  color: white;
 }
 
 .btn-outline {
-  /* TODO H (Button styling):
-     Make this an outlined button with a blue border and matching text.
-     (e.g., border: 2px solid ...; color: ...; background: transparent)
-  */
+  border: 2px solid;
+  color: darkred;
+  background: transparent;
 }
 
 /* ===== Features (3 columns) ===== */
 .features {
-  padding: 42px 0;
+  padding: 20px 0;
 }
 
 .features-grid {
-  /* TODO I (Layout):
-     Arrange the three feature blocks in a row (desktop).
-     Requirements:
-       - Use flexbox
-       - Add a gap between items (e.g., 26px)
-  */
+  display: flex;
+  gap: 26px;
+  flex-wrap: wrap;
 }
 
 .feature {
-  /* TODO J (Sizing / alignment):
-     Make each feature take equal width and center its text.
-  */
+  flex: 1;
+  text-align: center;
 }
 
 .icon {
@@ -147,8 +132,8 @@ a:hover { text-decoration: underline; }
 
 /* ===== Featured content ===== */
 .featured {
-  padding: 42px 0 36px;
-  background: #f7f7f7;
+  padding: 40px 0 34px;
+  background: #fcc9bb;
 }
 
 .section-title {
@@ -161,10 +146,10 @@ a:hover { text-decoration: underline; }
 
 .section-lede {
   text-align: center;
-  max-width: 680px;
+  max-width: 600px;
   margin: 10px auto 22px;
-  color: #666;
-  font-size: 13px;
+  color: #red;
+  font-size: 14px;
 }
 
 .media {
@@ -176,29 +161,21 @@ a:hover { text-decoration: underline; }
 }
 
 
-
-
-
-
 /* ===== Secondary content (2 cards) ===== */
 .secondary {
   padding: 34px 0 44px;
 }
 
 .secondary-grid {
-  /* TODO K (Layout):
-     Put the two cards next to each other on desktop.
-     Requirements:
-       - Use flexbox
-       - Add a gap (e.g., 26px)
-  */
+  display: flex;
+  gap: 26px;
+  flex-wrap: wrap;
 }
 
 .card {
-  /* TODO L (Card styling):
-     Give each card a border and make it take equal width.
-     (Hint: flex: 1; border: 1px solid #eee)
-  */
+  flex: 1;
+  border: 1px solid #eee;
+  background-color: #fff;
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
@@ -222,36 +199,31 @@ a:hover { text-decoration: underline; }
 
 .card-image {
   min-height: 160px;
-  /* TODO M (Image block):
-     Make the card image behave like a background image:
-       - cover
-       - centered
-  */
+  background-size: cover;
+  background-position: center;
 }
 
 /* Optional images (already provided) */
 .img-a {
-  background-image: url("https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=800&q=60");
+  background-image: url("images/menu.jpg");
 }
 .img-b {
-  background-image: url("https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=800&q=60");
+  background-image: url("images/environment.jpg");
 }
 
 /* ===== CTA ===== */
 .cta {
-  background: #f7f7f7;
+  background: #fcc9bb;
   padding: 42px 0;
 }
 
 .cta-inner {
-  /* TODO N (Center CTA):
-     Center the CTA text and button.
-  */
+  text-align: center; 
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
 }
-
-
-
-
 
 /* ===== Footer ===== */
 .site-footer {
@@ -261,13 +233,11 @@ a:hover { text-decoration: underline; }
 }
 
 .footer-inner {
-  /* TODO O (Footer layout):
-     Arrange footer-left on the left and footer link columns on the right.
-     Requirements:
-       - Use flexbox
-       - Add a gap (e.g., 24px)
-       - Space items out (left/right)
-  */
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 24px;                 
+  flex-wrap: wrap;
 }
 
 .footer-left {

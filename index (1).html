@@ -6,73 +6,101 @@
 	<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-	<header class='header-inner'>
-		<img src="MadisonTitlePic.jpg" alt="Skyline view of Madison, Wisconsin">
-		<h1>Madison Food Crawl</h1>
-		<nav aria-label="Main navigation">
-			<ul>
+	<header class="header-inner site-header">
+		<div class="brand">
+			<h4>Madison Food Crawl</h4>
+		</div>
+		<nav aria-label="Main navigation" class="site-nav">
 				<li><a href="food.html">Food</a></li>
 				<li><a href="drinks.html">Drinks</a></li>
 				<li><a href="atmoshpere.html">Atmosphere</a></li>
-			</ul>
 		</nav>
 	</header>
 	<main>
-		<section>
-			<h2>Become Familiar With Madison Favorites</h2>
-			<p>Your guide to the best cuisine in Madison.</p>
-			<button type="button">Get Started</button>
-		</section> 
-	<section>
-		<h2>Price Categories</h2>
-		<article>
-				<h3>Expensive</h3>
-				<p>Explore fine dining in Madison.</p>
+		<section class="hero">
+		  <div class="hero-content container">
+		    <h1>Become Familiar With Madison Favorites</h1>
+		    <p class="hero-subhead">Your guide to the best cuisine in Madison.</p>
+		    <button type="button" class="btn btn-dark">Get Started</button>
+		  </div>
+</section>
+	<section class="features features-grid">
+		<article class="feature section-lede media">
+				<h3 class="section-title">Expensive</h3>
+				<p class="icon">$$$</p>
+				<p class="featured">Explore fine dining in Madison.</p>
 			</article>
 
-			<article>
-				<h3>Moderate</h3>
-				<p>Reasonable prices and delicious food.</p>
+			<article class="feature section-lede media">
+				<h3 class="section-title">Moderate</h3>
+				<p class="icon">$$</p>
+				<p class="featured">Reasonable prices and delicious food.</p>
 			</article>
 
-			<article>
-				<h3>Affordable</h3>
-				<p>Spots that won't break the bank.</p>
+			<article class="feature section-lede media">
+				<h3 class="section-title">Affordable</h3>
+				<p class="icon">$</p>
+				<p class="featured">Spots that won't break the bank.</p>
 			</article>
 	</section>
-	<section>
+	<section class="container">
 		<h2>Welcome to Madison!</h2>
 		<p>
 			Madison, Wisconsin is a city where food reflects community, creativity, and a deep connection to place. Known for its vibrant farmers’ markets, diverse neighborhoods, and strong support for local businesses, Madison’s food scene blends Midwest comfort with global flavors. From casual campus staples to innovative kitchens inspired by fresh, seasonal ingredients, the city offers something for every taste and budget. This site is your guide to exploring Madison’s culinary culture, whether you’re a student, a local, or just passing through.
 		</p> 
 	</section>
-	<section>
-			<h2>Favorites</h2>
+	<section class="secondary">
+  <div class="container">
+    <h2>Favorites</h2>
+    <div class="secondary-grid">
+      <article class="card">
+        <div class="card-image img-a"></div>
 
-			<article>
-				<h3>Favorite Menu</h3>
-				<p>Explore some of the best foods Madison has to offer. This section will highlight my favorite menus that can be found from local Madison cuisine</p>
-				<img src="MenuPic.webp" alt="Restaurant menu featuring local Madison dishes">
-				<p><a href="#">Restaurant Link</a></p>
-			</article>
+        <div class="card-text">
+          <h3>Favorite Menu</h3>
+          <p>
+            Explore some of the best foods Madison has to offer.
+            This section highlights favorite local menus.
+          </p>
+          <a href="#">Restaurant Link</a>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card-image img-b"></div>
 
-			<article>
-				<h3>Favorite Environment</h3>
-				<p>If you are looking for a great atmosphere, fun vibes, and location, then you are in the right place. Explore some spots that will guarantee a good time. </p>
-				<img src="3N8A65980_fb210495-a863-4a8a-b183-b2b72b17077c.jpg" alt="Family eating by lakeside">
-				<p><a href="#">Restaurant Link</a></p>
-			</article>
-		</section>
-	<section>
-		<h3>Heard Enough?</h3>
-		<button type="button">Heard Enough?</button>
-	</section>
+        <div class="card-text">
+          <h3>Favorite Environment</h3>
+          <p>
+            Find great atmosphere, fun vibes, and beautiful locations.
+          </p>
+          <a href="#">Restaurant Link</a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+	<section class="cta">
+    <div class="cta-inner">
+      <h2>Ready to Explore?</h2>
+      <a href="#" class="btn btn-dark">Start Your Food Crawl</a>
+    </div>
+  </section>
 </main>
-<footer>
-	<p>&copy; 2026 Madison Food Crawl. All rights reserved.</p> 
-	<p><a href="#">Recommended Restaurants</a></p>
-	<p><a href="#">Recommended Restaurants</a></p>
-	<p><a href="#">Recommended Restaurants</a></p>
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p class="footer-left">
+      &copy; 2026 Madison Food Crawl. All rights reserved.
+    </p>
+
+    <div class="footer-cols">
+      <div class="footer-col">
+        <h4>Explore</h4>
+        <a href="#">Recommended Restaurants</a>
+        <a href="#">Best Environments</a>
+        <a href="#">Top Rated Spots</a>
+      </div>
+    </div>
+  </div>
 </footer>
 </body>
 </html>
